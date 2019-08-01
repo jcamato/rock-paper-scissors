@@ -3,11 +3,11 @@ function computerPlay() {
   let rand = Math.floor(Math.random() * Math.floor(3));
 
   if (rand === 0) {
-    return "Rock";
+    return "rock";
   } else if (rand === 1) {
-    return "Paper";
+    return "paper";
   } else {
-    return "Scissors";
+    return "scissors";
   }
 }
 
@@ -15,7 +15,7 @@ function computerPlay() {
 function playRound() {
 
   let p = prompt("Enter rock, paper, or scissors.").toLowerCase();
-  let c = computerPlay().toLowerCase();
+  let c = computerPlay();
 
   if (p === c) {
     console.log(`It's a draw! Both players picked ${p}.`);
